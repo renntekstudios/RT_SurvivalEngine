@@ -4,10 +4,14 @@ using System.Collections;
 [System.Serializable]
 public class ItemConf {
 
-    public int ItemID;
     public string itemConfName;
     public Texture itemTexture;
-    public float Value;
+    public int Value;
+    public bool isClickable;
+    public int Stack;
+    public int ItemID;
+    public bool isStackable;
+    public int manaStack;
 
     public enum ItemType
     {

@@ -5,4 +5,5 @@ public class PlayerConfig : MonoBehaviour {
 
     public Inventory inventory;
     public GUIManager guiManager;
+    public PlayerHealth playerHealth;
 }

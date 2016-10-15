@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -37,10 +37,10 @@ public class InventoryGUI : MonoBehaviour
 
             for (int i = 0; i < inventory.InventoryItems.Count; i++)
             {
-                var item = inventory.InventoryItems[i];
-                if (GUI.Button(new Rect(currentX, currentY, itemIconSize.x, itemIconSize.y), inventory.InventoryItems[i].itemTexture))
+                int index = i;
+                if (GUI.Button(new Rect(currentX, currentY, itemIconSize.x, itemIconSize.y), inventory.InventoryItems[index].itemTexture))
                 {
-                    inventory.UseItem(inventory.InventoryItems[i].type, inventory.InventoryItems[i].useType, inventory.InventoryItems[i].Value, inventory.InventoryItems[i].ItemID);
+                    inventory.UseItem(inventory.InventoryItems[index].type, inventory.InventoryItems[index].useType, inventory.InventoryItems[index].Value, inventory.InventoryItems[index]);
                 }
                 currentX += itemIconSize.x;
                 if (currentX + itemIconSize.x > windowPosition.x + windowSize.x)
@@ -56,4 +56,4 @@ public class InventoryGUI : MonoBehaviour
         }
         
     }
-}
+}                                                                                                                      
